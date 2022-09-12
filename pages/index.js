@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Grid from '../components/Grid';
 import Hero from '../components/Hero';
 import Slider from '../components/Slider';
 import { SliderData } from '../components/SliderData';
@@ -19,6 +20,7 @@ export default function Home() {
 				message='I capture moments in life and keep them alive.'
 			/>
 			<Slider slides={SliderData} />
+			<Grid />
 		</div>
 	);
 }
