@@ -31,7 +31,10 @@ const Navbar = () => {
 		>
 			<div className='max-w-[1240px] m-auto flex justify-between items-center p-4 text-white'>
 				<Link href='/'>
-					<h1 style={{ color: `${textColour}` }} className='font-bold text-4xl'>
+					<h1
+						style={{ color: `${textColour}` }}
+						className='font-bold text-4xl cursor-pointer'
+					>
 						Emotiv
 					</h1>
 				</Link>
