@@ -20,7 +20,7 @@ const Slider = ({ slides }) => {
 
 	return (
 		<div id='gallery' className='max-w-[1240px] mx-auto'>
-			<h1 className='text-2xl font-bold text-center p-4'>Gallery</h1>
+			<h1 className='text-2xl font-bold text-center px-4 py-8'>Gallery</h1>
 			<div className='relative flex justify-center px-4 pb-4'>
 				{slides.map((slide, index) => (
 					<div
@@ -35,7 +35,7 @@ const Slider = ({ slides }) => {
 						<FaArrowCircleLeft
 							onClick={previousSlide}
 							size={50}
-							className='absolute top-[50%] left-[30px] text-white/70 cursor-pointer select-none z-[2]'
+							className='absolute top-[40%] left-[30px] text-white/70 cursor-pointer select-none z-[2]'
 						/>
 						{index === current && (
 							<Image
@@ -49,7 +49,7 @@ const Slider = ({ slides }) => {
 						<FaArrowCircleRight
 							onClick={nextSlide}
 							size={50}
-							className='absolute top-[50%] right-[30px] text-white/70 cursor-pointer select-none z-[2]'
+							className='absolute top-[40%] right-[30px] text-white/70 cursor-pointer select-none z-[2]'
 						/>
 					</div>
 				))}
